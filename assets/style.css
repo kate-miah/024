@@ -34,28 +34,31 @@ transition-timing-function - функция времени (принцит ра�
     color: var(--main-color);
     font-size: 1.5em;
     padding: 1.5em;
-    transition-duration: 500ms;
-    transition-property:all;  /*background-color;*/
-    transition-timing-function: linear;
+    /* transition-duration: 500ms;
+    transition-property: all; 
+    transition-timing-function: linear; */
 }
 
 .nav-item:hover { /* точка В */
-    background-color: var(--main-color);
-    color: white;
+    /* background-color: var(--main-color);
+    color: white; */
     cursor: pointer;
 }
 
-/* .nav-item::after {
+.nav-item::after {
     width: 0;
     height: 3px;
     background-color: var(--main-color);
     content: '';
     display: block;
+    transition-duration: 500ms;
+    transition-property: all; 
+    transition-timing-function: ease-in-out;
 }
 
 .nav-item:hover::after {
     width: 100%;
-} */
+}
 .nav-list {
     display: flex;
     flex-direction: row;
