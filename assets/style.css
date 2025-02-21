@@ -1,5 +1,6 @@
 :root {
     --header-size: 10vh;
+    --main-color: rgb(45,45, 45);
 }
 
 header {
@@ -18,13 +19,43 @@ header {
     align-self: stretch;
     border: 1px solid white;
 }
-.nav-item {
-    /* background-color: rgb(34, 33, 33);
-    color: white; */
+
+/* Transition - переход (планость внимации) для элементу
+
+Указывается в ОСНОВНОМ правиле елемнета (точка А) 
+transition-delay - отсрочка(задержка начала анимации)
+transition-duraction - продолжительность анимации (сколько времени она продолжается) 
+transition-property - какую особенность (властивисть) нужно анимировать 
+transition-timing-function - функция времени (принцит раскадрирования)
+*/
+
+
+.nav-item { /* точка А */
+    color: var(--main-color);
     font-size: 1.5em;
     padding: 1.5em;
-
+    transition-duration: 500ms;
+    transition-property:all;  /*background-color;*/
+    transition-timing-function: linear;
 }
+
+.nav-item:hover { /* точка В */
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* .nav-item::after {
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    content: '';
+    display: block;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+} */
 .nav-list {
     display: flex;
     flex-direction: row;
