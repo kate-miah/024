@@ -1,6 +1,10 @@
+:root {
+    --header-size: 10vh;
+}
+
 header {
     width: 100%;
-    height: 10vh;
+    height: var(--header-size);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,3 +30,23 @@ header {
     flex-direction: row;
 }
 
+.banner {
+    width: 100%;
+    height: calc(100vh - var(--header-size));
+    background-image: url('./pexels-creative-vix-9754.jpg');
+}
+
+.news  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vh 10vw;
+    justify-content: space-between;
+}
+
+.news-card {
+    width: 30%;
+    border: 1px solid black;
+    padding: 2em;
+    box-sizing: border-box;
+    margin: 2vh 1vw;
+}
