@@ -19,6 +19,51 @@ header {
     align-self: stretch;
     border: 1px solid white;
 }
+.sanbox {
+    width: 100%;
+    height: 50vh;
+}
+
+.box-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-image: url(./Himalayas\,_Ama_Dablam\,_Nepal.jpg);
+    background-size: cover;
+    background-position: center;
+   transition: all 0.5s ease;
+    /* transform: rotateY(45deg); 
+    transform: skew(30deg);
+    transform: scale(2); */
+}
+.box:hover {
+    transform: scale(2);
+}
+
+/* Transform - трансформування елементу
+
+rotate(значення у градусах) - 
+rotateX() - поворот по горизонталі
+rotateY() - поворот по вертикалі 
+rotateZ() - поворот по осі X
+
+skew() - розтягування елементу
+skewX() - по горизонталі
+skewY() - по вертикалі
+
+scale() - маштабування
+
+
+*/
+
+
 
 /* Transition - переход (планость внимации) для элементу
 
@@ -27,6 +72,8 @@ transition-delay - отсрочка(задержка начала анимаци
 transition-duraction - продолжительность анимации (сколько времени она продолжается) 
 transition-property - какую особенность (властивисть) нужно анимировать 
 transition-timing-function - функция времени (принцит раскадрирования)
+
+transition: property duration timing;
 */
 
 
